@@ -4,7 +4,7 @@
 ![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-F58113)
 ![Nav2](https://img.shields.io/badge/Nav2-DWB_%7C_MPPI-blue)
 ![Platform](https://img.shields.io/badge/Ubuntu-24.04-E95420?logo=ubuntu&logoColor=white)
-![License](https://img.shields.io/badge/license-[YOUR_LICENSE]-lightgrey)
+
 
 > LiDAR-only SLAM → saved occupancy grid → AMCL localization → Nav2 goal navigation for a
 > differential-drive robot in a custom Gazebo maze, with two local-controller profiles (DWB baseline, MPPI)
@@ -50,7 +50,7 @@ commands.
 
 Autonomous navigation demo
 
-![Navigation demo](docs/media/navigation_demo.gif)
+![Navigation demo](docs/demo.gif)
 *[PLACEHOLDER: High-frame-rate demo GIF, RViz + Gazebo side by side, start → goal]*
 
 <details>
@@ -158,7 +158,7 @@ forming an S-shaped corridor and a goal marker at (2, 2). The world declares the
 `UserCommands`, `SceneBroadcaster` and `Sensors` systems. The last one **must** live at world scope for
 the LiDAR to render ([§6.1](#61-failure-log)).
 
-![Maze world and robot](docs/images/gazebo_world.png)
+![Maze world and robot](docs/gazebo_world.png)
 *[PLACEHOLDER: Gazebo screenshot of the maze with the robot at spawn]*
 
 ### 3.4 TF tree
@@ -221,7 +221,7 @@ p=\frac{255-\text{pixel}}{255},\qquad
 \text{occupied if } p>0.65,\quad \text{free if } p<0.196,\quad \text{otherwise unknown}.
 $$
 
-![Generated occupancy map](docs/images/map.png)
+![Generated occupancy map](docs/map.png)
 *[PLACEHOLDER: `map.pgm` exported as PNG, optionally overlaid on the Gazebo ground truth]*
 
 ### 4.2 State estimation scope
@@ -624,4 +624,4 @@ dynamic-obstacle experiments and the DWB-vs-MPPI A/B ([§7](#7-validation-status
 
 If you build on this work, please cite the repository and the Nav2 paper above.
 
-**Maintainer:** [YOUR NAME] · [YOUR EMAIL / LINKEDIN] · **License:** [YOUR_LICENSE]
+**Maintainer:** [SIBASISH BARIK] · [www.linkedin.com/in/sibasishbarik]
